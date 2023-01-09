@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Sakit Healvibe</title>
+
+      <!-- aos css file cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+      <!-- magnific popup css cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  
+      <!-- bootstrap cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css">
+  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+    .container3
+    {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        margin: 30px 5px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container3:hover{
+        height: 300px;
+    }
+
+    .container3 .button3{
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background: rgb(190, 30, 30);
+        bottom: 0;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: 62px;
+        text-align: center;
+        font-size: 40px;
+        z-index: 100;
+        box-shadow: 0 10px 25px -5px rgba(44, 179, 240 , 0.6);
+        cursor: pointer;
+        transition: all .3s;
+        color: #fff;
+    }
+
+    .container3 .float-element{
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        font-size: 27px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 50px;
+        transform: translateY(100px);
+        cursor: pointer;
+        margin: 15px auto;
+        opacity: 0;
+        z-index: 0;
+        color: #fff;
+
+    }
+
+    .container3 .float-element .material-icons{
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    .container3 .float-element:nth-child(1)
+    {
+        background: #a53e3e;
+        box-shadow: 0 20px 20px -10px rgba(255, 152,0, 0.5);
+    }
+
+    .container3 .float-element:nth-child(2)
+    {
+        background: #2dab64;
+        box-shadow: 0 20px 20px -10px rgba(255, 152,0, 0.5);
+    }
+
+    .container3 .float-element:nth-child(3)
+    {
+        background: #2d90ab;
+        box-shadow: 0 20px 20px -10px rgba(255, 152,0, 0.5);
+    }
+
+    .container3:hover .float-element:nth-child(1){
+        animation: come-in 0.4s forwards 0.2s;
+    }
+
+    .container3:hover .float-element:nth-child(2){
+        animation: come-in 0.4s forwards 0.4s;
+    }
+
+    .container3:hover .float-element:nth-child(3){
+        animation: come-in 0.4s forwards 0.6s;
+    }
+
+
+    @keyframes come-in
+    {
+        0%
+        {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        30%
+        {
+            transform: translateX(-50px) scale(0.4);
+        }
+        70%
+        {
+            transform: translateX(0px) scale(1.2);
+        }
+        100%
+        {
+            transform: translateX(0px) scale(1);
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><span class="fas fa-hospital"></span>healvibe</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="profil.html">Profil</a>
+            <a href="poliklinik.html">Poliklinik</a>
+            <a href="service.html">services</a>
+            <a class="active" href="dokter.html">Dokter</a>
+            <a href="formulir.html">Pendaftaran</a>
+        </nav>
+    </header>
+
+    <div class="container3">
+        <div class="button3"><span class="material-symbols-outlined">
+            e911_emergency
+            </span></div>
+        <div class="element">
+            <a href="tel: 118" class="float-element">
+                <i class="fa-solid fa-truck-medical"></i>
+            </a>
+            <a href="emergencyBook.html" class="float-element">
+                <i class="fa-solid fa-book-medical"></i>
+            </a>
+            <a href="formulir.html" class="float-element">
+                <i class="fa-solid fa-user-pen"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="dokter" id="dokter">
+        
+            <div class="container min-vh-100">
+                <input type="text" class="form-control mb-5 p-3" placeholder="Search here..." id="search-input" style="font-size: 15px;">
+        
+                <h1 class="heading"><span>'</span> Dokter Rs Healvibe <span>'</span></h1><br><br><br><br>
+      
+                <div class="box-container">
+                      <div class="box">
+                        <img src="dohyun2.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Pediatri(Anak) - Spesialis Anak</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Do Hyun, SpA</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                      </div>
+        
+                      <div class="box">
+                        <img src="haechan2.png" width="100px" height="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Pediatri(Anak) - Spesialis Anak</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Haechan, SpA</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                      </div>  
+                      
+                      <div class="box">
+                        <img src="jungsuk.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Penyakit Dalam - Spesialis Penyakit Dalam</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jung Suk, SpPD</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                      </div>
+        
+                      <div class="box">
+                        <img src="yeonseok.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Penyakit Dalam - Spesialis Penyakit Dalam</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Yeon Seok, SpPD</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                      </div> 
+                      
+                      <div class="box">
+                        <img src="nana.jpeg" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Neurologi (Otak Dan Saraf) - Spesialis Saraf</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jaemin, SpN</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                      </div>
+        
+                      <div class="box">
+                        <img src="doyoung2.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Neurologi (Otak Dan Saraf) - Spesialis Saraf</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Doyoung, SpN</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                      </div>
+
+                      <div class="box">
+                        <img src="yeonjun2.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Kedokteran Gigi - Dokter Gigi</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">rg. Yeonjun</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <img src="jisung2.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Kedokteran Gigi - Dokter Gigi</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">rg. Jisung</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                    </div>
+        
+                    <div class="box">
+                        <img src="niki2.png" width="100px" alt="">
+                        <div class="content">
+                            <span><i class="fa-solid fa-stethoscope"></i> Kedokteran Gigi - Dokter Gigi</span>
+                            <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">rg. Niki</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                            <a href="#"><button class="button">learn more</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                      <img src="jay2.png" width="100px" alt="">
+                      <div class="content">
+                          <span><i class="fa-solid fa-stethoscope"></i> Otolaringologi (THT) - Spesialis Telinga-Hidung-Tenggorok-Kepala-Leher</span>
+                          <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jay, SpTHT-KL</a>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                          <a href="#"><button class="button">learn more</button></a>
+                      </div>
+                  </div>
+      
+                  <div class="box">
+                      <img src="taehyun2.png" width="100px" alt="">
+                      <div class="content">
+                          <span><i class="fa-solid fa-stethoscope"></i> Otolaringologi (THT) - Spesialis Telinga-Hidung-Tenggorok-Kepala-Leher</span>
+                          <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Taehyun, SpTHT-KL</a>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                          <a href="#"><button class="button">learn more</button></a>
+                      </div>
+                  </div>
+      
+                  <div class="box">
+                      <img src="hueningkai2.png" width="100px" alt="">
+                      <div class="content">
+                          <span><i class="fa-solid fa-stethoscope"></i> Otolaringologi (THT) - Spesialis Telinga-Hidung-Tenggorok-Kepala-Leher</span>
+                          <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Hueningkai, SpTHT-KL</a>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                          <a href="#"><button class="button">learn more</button></a>
+                      </div>
+                  </div>
+
+                  <div class="box">
+                    <img src="marklee.png" width="100px" alt="">
+                    <div class="content">
+                        <span><i class="fa-solid fa-stethoscope"></i> Oftalmologi (Mata) - Spesialis Mata</span>
+                        <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Mark, SpM</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                        <a href="#"><button class="button">learn more</button></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="heeseung2.png" width="100px" alt="">
+                    <div class="content">
+                        <span><i class="fa-solid fa-stethoscope"></i> Oftalmologi (Mata) - Spesialis Mata</span>
+                        <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Heeseung, SpM</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                        <a href="#"><button class="button">learn more</button></a>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="chenle.png" width="100px" alt="">
+                    <div class="content">
+                        <span><i class="fa-solid fa-stethoscope"></i> Oftalmologi (Mata) - Spesialis Mata</span>
+                        <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Chenle, SpM</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                        <a href="#"><button class="button">learn more</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                  <img src="gyu.jpeg" width="100px" alt="">
+                  <div class="content">
+                      <span><i class="fa-solid fa-stethoscope"></i> Rehabilitasi Medik - Rehab Medik</span>
+                      <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Beomgyu, SpKFR</a>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                      <a href="#"><button class="button">learn more</button></a>
+                  </div>
+              </div>
+  
+              <div class="box">
+                  <img src="sunghoon2.png" width="100px" alt="">
+                  <div class="content">
+                      <span><i class="fa-solid fa-stethoscope"></i> Rehabilitasi Medik - Rehab Medik</span>
+                      <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Sunghoon, SpKFR</a>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                      <a href="#"><button class="button">learn more</button></a>
+                  </div>
+              </div>
+  
+              <div class="box">
+                  <img src="jake2.png" width="100px" alt="">
+                  <div class="content">
+                      <span><i class="fa-solid fa-stethoscope"></i> Rehabilitasi Medik - Rehab Medik</span>
+                      <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jake, SpKFR</a>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                      <a href="#"><button class="button">learn more</button></a>
+                  </div>
+              </div>
+
+              <div class="box">
+                <img src="soobin2.png" width="100px" alt="">
+                <div class="content">
+                    <span><i class="fa-solid fa-stethoscope"></i> Dermatologi (Kulit) - Spesialis Kulit Dan Kelamin</span>
+                    <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Soobin, SpKK</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="sunoo2.png" width="100px" alt="">
+                <div class="content">
+                    <span><i class="fa-solid fa-stethoscope"></i> Dermatologi (Kulit) - Spesialis Kulit Dan Kelamin</span>
+                    <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Sunoo, SpKK</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="jungwon2.png" width="100px" alt="">
+                <div class="content">
+                    <span><i class="fa-solid fa-stethoscope"></i> Dermatologi (Kulit) - Spesialis Kulit Dan Kelamin</span>
+                    <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jungwon, SpKK</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+              <img src="jaehyun2.png" width="100px" alt="">
+              <div class="content">
+                  <span><i class="fa-solid fa-stethoscope"></i> Kebidanan Dan Kandungan - Spesialis Obstetri Dan Ginekologi</span>
+                  <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jaehyun, SpOG</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                  <a href="#"><button class="button">learn more</button></a>
+              </div>
+          </div>
+
+          <div class="box">
+              <img src="jeno.png" width="100px" alt="">
+              <div class="content">
+                  <span><i class="fa-solid fa-stethoscope"></i> Kebidanan Dan Kandungan - Spesialis Obstetri Dan Ginekologi</span>
+                  <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Jeno, SpOG</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                  <a href="#"><button class="button">learn more</button></a>
+              </div>
+          </div>
+
+          <div class="box">
+              <img src="renjun.png" width="100px" alt="">
+              <div class="content">
+                  <span><i class="fa-solid fa-stethoscope"></i> Kebidanan Dan Kandungan - Spesialis Obstetri Dan Ginekologi</span>
+                  <a style="text-transform: lowercase; font-family: times new roman; font-size: 23px">d</a><a style="font-family: times new roman; font-size: 23px">r. Renjun, SpOG</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                  <a href="#"><button class="button">learn more</button></a>
+              </div>
+          </div>
+        </div>      
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <section class="footer" style="background: #3c6382;">
+      <div class="box-container">
+  
+          <div class="box">
+              <h3 style="font-family: 'Times New Roman';  font-style: bold;">quick links</h3>
+              <a href="index.html"> <i class="fas fa-chevron-right"></i> home </a>
+              <a href="profil.html"> <i class="fas fa-chevron-right"></i> profil </a>
+              <a href="poliklinik.html"> <i class="fas fa-chevron-right"></i> poliklinik </a>
+              <a href="service.html"> <i class="fas fa-chevron-right"></i> services </a>
+              <a href="dokter.html"> <i class="fas fa-chevron-right"></i> dokter </a>
+              <a href="formulir.html"> <i class="fas fa-chevron-right"></i> pendaftaran </a>
+          </div>
+  
+          <div class="box">
+              <h3 style="font-family: 'Times New Roman'; font-style: bold;">PoliKlinik</h3>
+              <a href="anak.html"> <i class="fas fa-chevron-right"></i> Poliklinik Anak </a>
+              <a href="penyakitDalam.html"> <i class="fas fa-chevron-right"></i> Poliklinik Penyakit Dalam </a>
+              <a href="saraf.html"> <i class="fas fa-chevron-right"></i> Poliklinik Saraf </a>
+              <a href="gigi.html"> <i class="fas fa-chevron-right"></i> Poliklinik Gigi & Mulut </a>
+              <a href="tht.html"> <i class="fas fa-chevron-right"></i> Poliklinik THT </a>
+              <a href="mata.html"> <i class="fas fa-chevron-right"></i> Poliklinik Mata </a>
+              <a href="fisiotherapi.html"> <i class="fas fa-chevron-right"></i> Poliklinik Fisiotherapi </a>
+              <a href="kosmetik.html"> <i class="fas fa-chevron-right"></i> Poliklinik Kosmetik Medik </a>
+              <a href="obygn.html"> <i class="fas fa-chevron-right"></i> Poliklinik Obgyn </a>
+          </div>
+  
+          <div class="box">
+              <h3 style="font-family: 'Times New Roman'; font-style: bold;">contact info</h3>
+              <a href="#"> <i class="fas fa-phone"></i> +62 895-3373-20066 </a>
+              <a href="#"> <i class="fas fa-phone"></i> +62 812-7461-2228 </a>
+              <a href="#"> <i class="fas fa-phone"></i> +62 895-6216-54714 </a>
+              <a href="#"> <i class="fas fa-phone"></i> +62 858-3260-4677 </a>  
+              <a href="#"> <i class="fas fa-envelope"></i> RsHealvibe@gmail.com </a>                 
+              <a href="#"> <i class="fas fa-map-marker-alt"></i> Palembang, Indonesia </a>
+          </div>
+  
+          <div class="box">
+              <h3 style="font-family: 'Times New Roman'; font-style: bold;">follow us</h3>
+              <a href="#"> <i class="fab fa-facebook-f"></i> Rumah Sakit Healvibe </a>
+              <a href="#"> <i class="fab fa-twitter"></i> RS_Healvibe </a>
+              <a href="https://www.instagram.com/ayuri.oktavianiii/?hl=id"> <i class="fab fa-instagram"></i> ayuri.oktavianiii </a>
+              <a href="https://www.instagram.com/muliasahpira_/?hl=id"> <i class="fab fa-instagram"></i> muliasahpira_ </a>
+              <a href="https://www.instagram.com/selvie.tan707/?hl=id"> <i class="fab fa-instagram"></i> selvie.tan707 </a>
+              <a href="https://www.instagram.com/rflois17/?hl=id"> <i class="fab fa-instagram"></i> rflois17 </a>
+          </div>
+  
+      </div>
+  
+      <div class="credit"> &copy; 2023 <span>Rumah Sakit Healvibe</span> | all rights reserved </div>
+  
+    </section>
+
+
+
+    <script>
+        document.querySelector('#search-input').addEventListener('input', filterList)
+    
+        function filterList(){
+            const searchInput = document.querySelector('#search-input')
+            const filter = searchInput.value.toLowerCase()
+            const listItems = document.querySelectorAll('.box')
+    
+    
+            listItems.forEach((item) =>{
+                let text = item.textContent
+                if(text.toLocaleLowerCase().includes(filter.toLocaleLowerCase())){
+                    item.style.display = ''
+                }
+                else{
+                    item.style.display = 'none'
+                }
+            });
+        }
+    </script>
+    
+
+<!-- magnific popup js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+<script>
+
+AOS.init({
+    duration:1000,
+    delay:400
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
